@@ -91,7 +91,7 @@
 .dialog .info .description {
   font-size: 1.3rem;
   overflow-y: auto;
-  margin: 20px 0;
+  margin: 10px 0;
   padding-right: 4px;
 }
 .dialog .info button {
@@ -140,7 +140,7 @@
   .dialog {
     overflow-y: auto;
     width: 300px;
-    height: 500px;
+    height: 700px;
     flex-direction: column;
   }
   .dialog::-webkit-scrollbar {
@@ -285,6 +285,9 @@ html, body {
   font-size: 1.5rem;
   margin-bottom: 20px;
 }
+.block.products p {
+  font-size: 1.1rem;
+}
 .block.products .row {
   display: flex;
   justify-content: space-between;
@@ -317,23 +320,39 @@ html, body {
 }
 
 @media screen and (max-width: 900px) {
+  .main {
+    padding: 10px !important;
+  }
+  .main::-webkit-scrollbar {
+    display: none;
+  }
   .homer {
     visibility: hidden;
   }
   .block.announce {
     flex-direction: column;
-    margin-bottom: 200px;
+    margin-bottom: 20px;
   }
   .block.announce .announce-info {
     min-height: 250px;
-    width: 250px;
+    width: 280px;
   }
   .row {
-    flex-direction: column;
+    gap: 10px;
+  }
+  .row .card {
+    width: 90px;
+  }
+  .row .card .name {
+    font-size: 0.8rem !important;
+  }
+  .row .card img {
+    width: 90px !important;
+    height: 240px;
   }
   .annpunce-photo img {
-    width: 250px !important;
-    height: 250px !important;
+    width: 280px !important;
+    height: 100px !important;
   }
   .content > div {
     width: 300px;

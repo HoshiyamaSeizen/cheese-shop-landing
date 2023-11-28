@@ -119,6 +119,8 @@ html, body
         .title
             font-size: 1.5rem
             margin-bottom: 20px
+        p
+            font-size: 1.1rem
         .row
             display: flex
             justify-content: space-between
@@ -144,19 +146,31 @@ html, body
                         scale: 0.9
 
 @media screen and (max-width: 900px)
+    .main
+        padding: 10px !important
+    .main::-webkit-scrollbar
+        display: none
     .homer
         visibility: hidden
     .block.announce
         flex-direction: column
-        margin-bottom: 200px
+        margin-bottom: 20px
         .announce-info
             min-height: 250px
-            width: 250px
+            width: 280px
     .row
-        flex-direction: column
+        // flex-direction: column
+        gap: 10px
+        .card
+            width: 90px
+            .name
+                font-size: 0.8rem !important
+            img
+                width: 90px !important
+                height: 240px
     .annpunce-photo
         img
-            width: 250px !important
-            height: 250px !important
+            width: 280px !important
+            height: 100px !important
     .content > div
         width: 300px
