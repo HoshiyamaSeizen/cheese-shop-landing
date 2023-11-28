@@ -140,7 +140,7 @@
   .dialog {
     overflow-y: auto;
     width: 300px;
-    height: min(85vh, 720px);
+    height: min(80vh, 720px);
     flex-direction: column;
   }
   .dialog::-webkit-scrollbar {
