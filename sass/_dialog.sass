@@ -96,7 +96,7 @@
     .dialog
         overflow-y: auto
         width: 300px
-        height: 700px
+        height: min(85vh, 720px)
         flex-direction: column
         &::-webkit-scrollbar
             display: none
@@ -104,3 +104,5 @@
             width: 250px
             height: 250px
             object-fit: cover
+        button
+            margin-top: 10px
