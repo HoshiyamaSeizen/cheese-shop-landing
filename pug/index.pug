@@ -1,0 +1,88 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="style.css")
+        link(rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.jpg")
+        link(rel="icon" type="image/jpg" sizes="32x32" href="./favicon/favicon-32x32.jpg")
+        link(rel="icon" type="image/jpg" sizes="16x16" href="./favicon/favicon-16x16.jpg")
+        link(rel="manifest" href="./favicon/site.webmanifest")
+        script(src="https://kit.fontawesome.com/ac0925c6df.js" crossorigin="anonymous")
+        script(src="script.js") 
+        title Сырная лавка
+    body 
+        .container
+            .overlay#overlay
+            .container-border.left
+            .content 
+                .header
+                    h1 Сырная лавка
+                    i(class="fa-solid fa-cart-shopping")
+                .main
+                    .dialog#dialog
+                        i.close(class="fa-solid fa-xmark", onclick="closeDialog()")
+                        img#d-image(src="./assets/1.jpg", alt="cheese")
+                        .info
+                            p.name#d-name null
+                            p.price#d-price 0₽
+                            p.description#d-desc null
+                            button Buy 
+                                i(class="fa-solid fa-bag-shopping")
+                    .block.announce 
+                        .announce-info(onclick="openDialog(0)") 
+                            p.date 30-31
+                                br
+                                | Декабря
+                            p Приглашаем на дегустацию нового сорта*
+                            p.small * дегустация возможна при покупке сыра на сумму от 300 рублей
+                        .annpunce-photo
+                            img(src="./assets/0.webp", alt="cheese")
+                    .block.products 
+                        h2.title Попробуй первым
+                        .row
+                            .card(onclick="openDialog(1)") 
+                                img(src="./assets/1.jpg", alt="cheese")
+                                p.name Чеддер
+                                p.price 250₽
+                            .card(onclick="openDialog(2)") 
+                                img(src="./assets/2.jpg", alt="cheese")
+                                p.name Эменталь
+                                p.price 300₽
+                            .card(onclick="openDialog(3)") 
+                                img(src="./assets/3.jpg", alt="cheese")
+                                p.name Моцарелла
+                                p.price 170₽
+                    .block.products 
+                        h2.title Акции
+                        .row
+                            .card(onclick="openDialog(4)") 
+                                img(src="./assets/4.jpg", alt="cheese")
+                                p.name Фета
+                                p.price 40₽
+                            .card(onclick="openDialog(5)") 
+                                img(src="./assets/5.jpg", alt="cheese")
+                                p.name Гауда
+                                p.price 40₽
+                            .card(onclick="openDialog(6)") 
+                                img(src="./assets/6.jpg", alt="cheese")
+                                p.name Горгонзола
+                                p.price 200₽
+                    .block.products 
+                        h2.title Может понравится
+                        .row
+                            .card(onclick="openDialog(7)") 
+                                img(src="./assets/7.jpg", alt="cheese")
+                                p.name Манчего
+                                p.price 390₽
+                            .card(onclick="openDialog(8)") 
+                                img(src="./assets/8.jpg", alt="cheese")
+                                p.name Сент-Мор
+                                p.price 240₽
+                            .card(onclick="openDialog(9)") 
+                                img(src="./assets/9.jpg", alt="cheese")
+                                p.name Касу марцу
+                                p.price 1800₽
+                .footer
+            .container-border.right
+            .homer

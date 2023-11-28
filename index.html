@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.jpg">
+    <link rel="icon" type="image/jpg" sizes="32x32" href="./favicon/favicon-32x32.jpg">
+    <link rel="icon" type="image/jpg" sizes="16x16" href="./favicon/favicon-16x16.jpg">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <script src="https://kit.fontawesome.com/ac0925c6df.js" crossorigin="anonymous"></script>
+    <script src="script.js"> </script>
+    <title>Сырная лавка</title>
+  </head>
+  <body> 
+    <div class="container">
+      <div class="overlay" id="overlay"></div>
+      <div class="container-border left"></div>
+      <div class="content"> 
+        <div class="header">
+          <h1>Сырная лавка</h1><i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <div class="main">
+          <div class="dialog" id="dialog"><i class="close fa-solid fa-xmark" onclick="closeDialog()"></i><img id="d-image" src="./assets/1.jpg" alt="cheese">
+            <div class="info">
+              <p class="name" id="d-name">null</p>
+              <p class="price" id="d-price">0₽</p>
+              <p class="description" id="d-desc">null</p>
+              <button>Buy <i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+          </div>
+          <div class="block announce"> 
+            <div class="announce-info" onclick="openDialog(0)"> 
+              <p class="date">30-31<br>Декабря</p>
+              <p>Приглашаем на дегустацию нового сорта*</p>
+              <p class="small">* дегустация возможна при покупке сыра на сумму от 300 рублей</p>
+            </div>
+            <div class="annpunce-photo"><img src="./assets/0.webp" alt="cheese"></div>
+          </div>
+          <div class="block products"> 
+            <h2 class="title">Попробуй первым</h2>
+            <div class="row">
+              <div class="card" onclick="openDialog(1)"> <img src="./assets/1.jpg" alt="cheese">
+                <p class="name">Чеддер</p>
+                <p class="price">250₽</p>
+              </div>
+              <div class="card" onclick="openDialog(2)"> <img src="./assets/2.jpg" alt="cheese">
+                <p class="name">Эменталь</p>
+                <p class="price">300₽</p>
+              </div>
+              <div class="card" onclick="openDialog(3)"> <img src="./assets/3.jpg" alt="cheese">
+                <p class="name">Моцарелла</p>
+                <p class="price">170₽</p>
+              </div>
+            </div>
+          </div>
+          <div class="block products"> 
+            <h2 class="title">Акции</h2>
+            <div class="row">
+              <div class="card" onclick="openDialog(4)"> <img src="./assets/4.jpg" alt="cheese">
+                <p class="name">Фета</p>
+                <p class="price">40₽</p>
+              </div>
+              <div class="card" onclick="openDialog(5)"> <img src="./assets/5.jpg" alt="cheese">
+                <p class="name">Гауда</p>
+                <p class="price">40₽</p>
+              </div>
+              <div class="card" onclick="openDialog(6)"> <img src="./assets/6.jpg" alt="cheese">
+                <p class="name">Горгонзола</p>
+                <p class="price">200₽</p>
+              </div>
+            </div>
+          </div>
+          <div class="block products"> 
+            <h2 class="title">Может понравится</h2>
+            <div class="row">
+              <div class="card" onclick="openDialog(7)"> <img src="./assets/7.jpg" alt="cheese">
+                <p class="name">Манчего</p>
+                <p class="price">390₽</p>
+              </div>
+              <div class="card" onclick="openDialog(8)"> <img src="./assets/8.jpg" alt="cheese">
+                <p class="name">Сент-Мор</p>
+                <p class="price">240₽</p>
+              </div>
+              <div class="card" onclick="openDialog(9)"> <img src="./assets/9.jpg" alt="cheese">
+                <p class="name">Касу марцу</p>
+                <p class="price">1800₽</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer"></div>
+      </div>
+      <div class="container-border right"></div>
+      <div class="homer"></div>
+    </div>
+  </body>
+</html>
