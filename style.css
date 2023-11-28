@@ -143,6 +143,9 @@
     height: 500px;
     flex-direction: column;
   }
+  .dialog::-webkit-scrollbar {
+    display: none;
+  }
   .dialog img {
     width: 250px;
     height: 250px;

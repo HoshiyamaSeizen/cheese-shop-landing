@@ -14,7 +14,7 @@
   </head>
   <body> 
     <div class="container">
-      <div class="overlay" id="overlay"></div>
+      <div class="overlay" id="overlay" onclick="closeDialog()"></div>
       <div class="container-border left"></div>
       <div class="content"> 
         <div class="header">
@@ -36,7 +36,7 @@
               <p>Приглашаем на дегустацию нового сорта*</p>
               <p class="small">* дегустация возможна при покупке сыра на сумму от 300 рублей</p>
             </div>
-            <div class="annpunce-photo"><img src="./assets/0.webp" alt="cheese"></div>
+            <div class="annpunce-photo" onclick="openDialog(0)"> <img src="./assets/0.webp" alt="cheese"></div>
           </div>
           <div class="block products"> 
             <h2 class="title">Попробуй первым</h2>

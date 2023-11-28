@@ -13,7 +13,7 @@ html(lang="en")
         title Сырная лавка
     body 
         .container
-            .overlay#overlay
+            .overlay#overlay(onclick="closeDialog()")
             .container-border.left
             .content 
                 .header
@@ -38,7 +38,7 @@ html(lang="en")
                                 | Декабря
                             p Приглашаем на дегустацию нового сорта*
                             p.small * дегустация возможна при покупке сыра на сумму от 300 рублей
-                        .annpunce-photo
+                        .annpunce-photo(onclick="openDialog(0)") 
                             img(src="./assets/0.webp", alt="cheese")
                     .block.products 
                         h2.title Попробуй первым

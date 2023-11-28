@@ -55,6 +55,7 @@ const openDialog = (index) => {
 	document.getElementById('d-info').hidden = index === -1;
 	document.getElementById('overlay').toggleAttribute('open', true);
 	document.getElementById('dialog').toggleAttribute('open', true);
+	document.getElementById('dialog').scrollTop = 0;
 	if (index === -1) {
 		document.getElementById('d-image').src = `./assets/qr.png`;
 	} else {
