@@ -12,6 +12,7 @@ html, body
     height: 100%
     color: $color-text
     font-family: $font
+    overflow: hidden
 
 .container
     height: 100%
@@ -49,17 +50,20 @@ html, body
         h1
             margin-left: 10px
             font-family: $font-title
-        i
-            padding-top: 12px
-            font-size: 24px
-            transition: all 300ms ease
-            cursor: pointer
-            &:hover
-                color: $color-2
-                scale: 1.1
-            &:active
-                color: $color-1
-                scale: 0.9
+        .btns
+            display: flex
+            gap: 20px
+            i
+                padding-top: 12px
+                font-size: 24px
+                transition: all 300ms ease
+                cursor: pointer
+                &:hover
+                    color: $color-2
+                    scale: 1.1
+                &:active
+                    color: $color-1
+                    scale: 0.9
     .main
         overflow: auto
         padding: 0 50px 0 10px
@@ -138,3 +142,21 @@ html, body
                     background-color: lighten($color-bg, 10%)
                     img
                         scale: 0.9
+
+@media screen and (max-width: 900px)
+    .homer
+        visibility: hidden
+    .block.announce
+        flex-direction: column
+        margin-bottom: 200px
+        .announce-info
+            min-height: 250px
+            width: 250px
+    .row
+        flex-direction: column
+    .annpunce-photo
+        img
+            width: 250px !important
+            height: 250px !important
+    .content > div
+        width: 300px

@@ -52,13 +52,18 @@ const info = [
 ];
 
 const openDialog = (index) => {
+	document.getElementById('d-info').hidden = index === -1;
 	document.getElementById('overlay').toggleAttribute('open', true);
 	document.getElementById('dialog').toggleAttribute('open', true);
-	document.getElementById('d-name').innerText = info[index].name;
-	document.getElementById('d-price').innerText = info[index].price + '₽';
-	document.getElementById('d-desc').innerText = info[index].desc;
-	if (index === 0) document.getElementById('d-image').src = `./assets/0.webp`;
-	else document.getElementById('d-image').src = `./assets/${index}.jpg`;
+	if (index === -1) {
+		document.getElementById('d-image').src = `./assets/qr.png`;
+	} else {
+		document.getElementById('d-name').innerText = info[index].name;
+		document.getElementById('d-price').innerText = info[index].price + '₽';
+		document.getElementById('d-desc').innerText = info[index].desc;
+		if (index === 0) document.getElementById('d-image').src = `./assets/0.webp`;
+		else document.getElementById('d-image').src = `./assets/${index}.jpg`;
+	}
 };
 
 const closeDialog = () => {

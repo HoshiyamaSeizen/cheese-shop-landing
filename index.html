@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.jpg">
-    <link rel="icon" type="image/jpg" sizes="32x32" href="./favicon/favicon-32x32.jpg">
-    <link rel="icon" type="image/jpg" sizes="16x16" href="./favicon/favicon-16x16.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
     <link rel="manifest" href="./favicon/site.webmanifest">
     <script src="https://kit.fontawesome.com/ac0925c6df.js" crossorigin="anonymous"></script>
     <script src="script.js"> </script>
@@ -18,11 +18,12 @@
       <div class="container-border left"></div>
       <div class="content"> 
         <div class="header">
-          <h1>Сырная лавка</h1><i class="fa-solid fa-cart-shopping"></i>
+          <h1>Сырная лавка</h1>
+          <div class="btns"> <i class="fa-solid fa-qrcode" onclick="openDialog(-1)"></i><i class="fa-solid fa-cart-shopping"></i></div>
         </div>
         <div class="main">
           <div class="dialog" id="dialog"><i class="close fa-solid fa-xmark" onclick="closeDialog()"></i><img id="d-image" src="./assets/1.jpg" alt="cheese">
-            <div class="info">
+            <div class="info" id="d-info">
               <p class="name" id="d-name">null</p>
               <p class="price" id="d-price">0₽</p>
               <p class="description" id="d-desc">null</p>
